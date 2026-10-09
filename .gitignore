@@ -1,0 +1,14 @@
+# Data and models: too large / private, do not commit
+data/
+*.wav
+*.mp3
+*.pt
+*.bin
+*.safetensors
+wav2vec2-xlsr-ser-checkpoints/
+wav2vec2-xlsr-ser-final/
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.env

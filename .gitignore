@@ -1,14 +1,29 @@
-# Data and models: too large / private, do not commit
+# Data: never commit the corpus or the annotation files
 data/
 *.wav
 *.mp3
+*.mp4
+*.flac
+*.xlsx
+*.csv
+
+# Model weights and checkpoints
 *.pt
 *.bin
 *.safetensors
-wav2vec2-xlsr-ser-checkpoints/
-wav2vec2-xlsr-ser-final/
+*.h5
+*.hdf5
+checkpoint-*/
+results/checkpoints/
+wandb/
 
-# Python / Jupyter
+# Python and notebooks
 __pycache__/
+*.pyc
 .ipynb_checkpoints/
+.venv/
+venv/
+
+# Secrets and OS files
 .env
+.DS_Store

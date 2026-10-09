@@ -1,10 +1,21 @@
-# Originally run on Google Colab (Python 3.7, PyTorch 1.12, CUDA 11.3).
-# Versions below are minimums for a recent environment; they were not re-tested on the original data.
+# Originally run on Google Colab (Python 3.7, PyTorch 1.12, CUDA 11.3; TensorFlow/Keras for the LSTM runs).
+# Versions below are minimums for a recent environment. Notebooks 02 and 03 were checked on synthetic audio
+# (scikit-learn, librosa, TensorFlow 2.21); none of them was re-run on the original corpus.
+
+# Notebooks 02 and 03: hand-crafted features, classical ML, LSTM
+numpy
+pandas
+openpyxl
+scikit-learn
+librosa
+soundfile
+matplotlib
+seaborn
+tensorflow>=2.16
+
+# Notebook 04: wav2vec 2.0 fine-tuning
 torch>=1.12
 torchaudio>=0.12
 transformers>=4.30
 datasets>=2.0
-scikit-learn
-numpy
-pandas
 packaging

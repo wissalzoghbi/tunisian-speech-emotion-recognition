@@ -1,0 +1,10 @@
+# Originally run on Google Colab (Python 3.7, PyTorch 1.12, CUDA 11.3).
+# Versions below are minimums for a recent environment; they were not re-tested on the original data.
+torch>=1.12
+torchaudio>=0.12
+transformers>=4.30
+datasets>=2.0
+scikit-learn
+numpy
+pandas
+packaging
